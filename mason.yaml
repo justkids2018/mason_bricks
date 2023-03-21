@@ -1,5 +1,7 @@
 bricks:
-  clean_starter:
-    path: bricks/clean_starter
   cubit_starter:
     path: bricks/cubit_starter
+  note:
+    path: bricks/note
+  nd_function_model:
+    path: bricks/nd_function_model
