@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../provider/{{name.snakeCase()}}_provider.dart';
+
+
 class {{name.pascalCase()}}Page extends StatefulWidget {
-  Map<String, dynamic>? params;
+  
+  final Map<String, dynamic>? params;
 
   {{name.pascalCase()}}Page({this.params, Key? key}) : super(key: key);
 
@@ -32,7 +36,7 @@ class _{{name.pascalCase()}}PageState extends State<{{name.pascalCase()}}Page> {
           onWillPop: () async {
             return false;
           },
-          child: Container(),
+          child: buildContainer(context),
         ),
         // body: const Text("cccc"),
       ),
@@ -40,13 +44,16 @@ class _{{name.pascalCase()}}PageState extends State<{{name.pascalCase()}}Page> {
     );
   }
 
+  //TODO: 业务VIEW逻辑
+  Widget buildContainer(BuildContext context){
+    
+     return Container();
+  }
+
   @override
   void didPopNext() {}
 
   @override
   void didPushNext() {}
-
-  @overvider
-  void 
 
 }
